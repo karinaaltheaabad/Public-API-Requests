@@ -55,6 +55,10 @@ const displayData = (data) => {
     gallery.appendChild(card);    
 }
 
+/**
+ *  CREATES HTML OF MODAL AND INSERTS TO PAGE WHEN CALLED
+ * @param {*} data 
+ */
 const displayModal = (data) => {
     const body = document.querySelector('body');
     const script = document.querySelector('script');
@@ -82,6 +86,10 @@ const displayModal = (data) => {
     body.insertBefore(modalContainer, script);
 }
 
+/**
+ * DISPLAYS MODAL ON PAGE AND HIDES MODAL BY CALLING hideModal()
+ * @param {*} data 
+ */
 const showModal = (data) => {
     const card = document.querySelectorAll('.card');
 
@@ -93,6 +101,10 @@ const showModal = (data) => {
     }
 }
 
+/**
+ * HIDES MODAL WHEN X IS CLICKED BY CALLING ON .remove()
+ * @param {*} data 
+ */
 const hideModal = (data) => {
     const modalClose = document.querySelector('#modal-close-btn');
 
